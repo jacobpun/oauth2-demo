@@ -1,0 +1,16 @@
+package org.pk.oauth2.authserver.config;
+
+import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
+
+public class CustomWebSecurityConfigurer extends WebSecurityConfigurerAdapter {
+
+	 @Override
+	    protected void configure(HttpSecurity http) throws Exception {
+	        http
+	            .authorizeRequests().antMatchers("/login").permitAll().and()
+	        // default protection for all resources (including /oauth/authorize)
+	            .authorizeRequests()
+	                .anyRequest().hasRole("USER")
+	        // ... more configuration, e.g. for form login
+	    }
+}

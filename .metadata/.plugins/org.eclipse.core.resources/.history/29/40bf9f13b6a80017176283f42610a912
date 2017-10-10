@@ -1,0 +1,6 @@
+package org.pk.oauth2.domain;
+
+public class Patient {
+	private String name;
+	private int age;
+}

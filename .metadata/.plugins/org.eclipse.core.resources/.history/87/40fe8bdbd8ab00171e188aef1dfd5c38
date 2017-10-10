@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Hello</title>
+</head>
+<body>
+	<b> ${request.clientId}</b> has requested access to for following
+	scopes:
+	<c:forEach var="scope" items="${request.scope}">
+		<li>${scope}</li>
+	</c:forEach>
+
+	<div id="wrapper">
+		<label for="yes_no_radio">Do you agree approve?</label>
+		<p>
+			<input type="radio" name="user_oauth_approval" checked>Yes</input>
+		</p>
+		<p>
+			<input type="radio" name="user_oauth_approval">No</input>
+		</p>
+	</div>
+</body>
+</html>

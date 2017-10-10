@@ -1,0 +1,5 @@
+package org.pk.oauth2.controller;
+
+public class PatientController {
+
+}

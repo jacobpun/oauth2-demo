@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="client"/>
+<aop-project name="authserver"/>
+<aop-project name="resource"/>
+</aop-reference-model>

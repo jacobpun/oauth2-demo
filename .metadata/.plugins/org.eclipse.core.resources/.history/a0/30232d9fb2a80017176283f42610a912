@@ -1,0 +1,7 @@
+package org.pk.oauth2.authserver.contoller;
+
+@Controller
+public class HomeController {
+
+	
+}

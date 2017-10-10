@@ -1,0 +1,5 @@
+package org.pk.oauth2.authserver.config;
+
+public class CustomWebSecurityConfigurer extends WebSecurityConfigurer {
+
+}

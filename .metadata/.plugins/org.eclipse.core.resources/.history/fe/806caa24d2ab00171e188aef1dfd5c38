@@ -1,0 +1,9 @@
+package org.pk.oauth2.authserver.contoller;
+
+import org.springframework.stereotype.Controller;
+
+@Controller
+@RequestMapping("/oauth/confirm_access")
+public class Auth2ApprovalController {
+
+}

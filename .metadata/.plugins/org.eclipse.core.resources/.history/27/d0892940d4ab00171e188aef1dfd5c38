@@ -1,0 +1,18 @@
+package org.pk.oauth2.authserver.contoller;
+
+import org.springframework.security.oauth2.provider.AuthorizationRequest;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+@RequestMapping("/oauth/confirm_access")
+public class Auth2ApprovalController {
+	
+	@GetMapping("/")
+	public String getAccessConfirmation(AuthorizationRequest clientAuth, Model model) throws Exception {
+		model.addAttribute("request", clientAuth);
+		return "access_confirmation";
+	}
+}

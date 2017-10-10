@@ -1,0 +1,2 @@
+eclipse.preferences.version=1
+org.eclipse.jdt.launching.PREF_VM_XML=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\n<vmSettings defaultVM\="57,org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType13,1507085792081" defaultVMConnector\="">\n<vmType id\="org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType">\n<vm id\="1507085106704" name\="jdk1.7.0_45" path\="/home/punnoose/dev/tools/jdk7/jdk1.7.0_45"/>\n<vm id\="1507085792081" name\="jdk1.8.0_144" path\="/home/punnoose/dev/tools/jdk8/jdk1.8.0_144"/>\n</vmType>\n</vmSettings>\n

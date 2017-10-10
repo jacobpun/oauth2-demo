@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Hello</title>
+</head>
+<body>
+	<b> ${request.clientId}</b> has requested access to for following
+	scopes:
+	<c:forEach var="scope" items="${request.scope}">
+		<li>${scope}</li>
+	</c:forEach>
+
+	<form action='/oauth/authorize' method='post'>
+		<input id="user_oauth_approval" name="user_oauth_approval"
+			value="true" type="hidden" /> 
+			<input name="authorize"
+			value="Authorize" type="submit"
+			onclick="$('#user_oauth_approval').attr('value',true)"
+			class="btn btn-success btn-large" /> &nbsp; <input name="deny"
+			value="Deny" type="submit"
+			onclick="$('#user_oauth_approval').attr('value',false)"
+			class="btn btn-secondary btn-large" />
+	</form>
+</body>
+</html>

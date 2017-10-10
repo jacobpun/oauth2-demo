@@ -1,0 +1,7 @@
+package org.pk.oauth2.config;
+
+@Configurationn
+
+public class OAuth2Config {
+
+}

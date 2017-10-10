@@ -1,0 +1,18 @@
+package org.pk.oauth2.authserver.config;
+
+@Configuration
+@Order(Ordered.HIGHEST_PRECEDENCE)
+public class AuthenticationManagerConfiguration
+    extends GlobalAuthenticationConfigurerAdapter {
+
+    @Autowired
+    private DataSource dataSource;
+
+    @Autowired
+    private UserDetailsService userService;
+
+    @Override
+    public void init(AuthenticationManagerBuilder auth) throws Exception {
+ auth.jdbcAuthentication().dataSource(this.dataSource).and().userDetailsService(this.userService);// Inject custom
+    }
+}

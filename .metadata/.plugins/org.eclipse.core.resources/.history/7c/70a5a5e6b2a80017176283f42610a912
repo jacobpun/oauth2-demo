@@ -1,0 +1,12 @@
+package org.pk.oauth2.authserver.contoller;
+
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class ResourceController {
+
+	@GetMapping("/user")
+	public Principal user() {
+		
+	}
+}

@@ -1,0 +1,10 @@
+package org.pk.oauth2.authserver.config;
+
+@Configuration
+@EnableResourceServer
+public class ResourceServerConfig extends ResourceServerConfigurerAdapter {
+	@Override
+	public void configure(HttpSecurity http) throws Exception {
+		http.antMatcher("/me").authorizeRequests().anyRequest().authenticated();
+	}
+}

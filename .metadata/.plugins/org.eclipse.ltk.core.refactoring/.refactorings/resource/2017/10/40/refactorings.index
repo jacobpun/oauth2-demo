@@ -1,0 +1,11 @@
+1507088505132	Delete element
+1507088562494	Encapsulate field 'name'
+1507088567633	Encapsulate field 'age'
+1507089571662	Delete element
+1507171630409	Move 1 resources to 'oauth2'
+1507171679273	Delete element
+1507343413194	Copy package
+1507393941221	Rename package 'org.pk.test'
+1507394301200	Rename compilation unit 'ProtectedResourceTest.java'
+1507394323295	Copy compilation unit
+1507394331016	Rename type 'CopyOfProtectedResourceTest'

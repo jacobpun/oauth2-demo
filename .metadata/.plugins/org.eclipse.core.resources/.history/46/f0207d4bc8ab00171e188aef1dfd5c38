@@ -1,0 +1,23 @@
+package org.pk.oauth2.authserver.dao;
+
+import java.util.Map;
+
+import org.pk.oauth2.authserver.model.User;
+import org.springframework.security.core.userdetails.UserDetails;
+
+public class UserDao {
+
+	Map<String, UserDetails> userDetails;
+	
+	static {
+		UserDetails pk = new User("pk", "pkpassword", "PARENT", "ADMIN");
+		UserDetails dony = new User("dony", "donypassword", "PARENT", "ADMIN");
+		UserDetails pk = new User("pk", "pkpassword", "USER");
+		UserDetails dony = new User("dony", "donypassword", "USER");		
+	}
+	
+	public UserDetails findByName(String name) {
+		return userDetails.get(name);
+	}
+	
+}
