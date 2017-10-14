@@ -5,3 +5,5 @@
 1507431857833	Move file
 1507432039083	Rename resource 'access_confirmation.jsp'
 1507510850657	Delete element
+1507682135903	Rename type 'ResourceServerConfig'
+1507682165434	Rename type 'ResourceServerConfig2'

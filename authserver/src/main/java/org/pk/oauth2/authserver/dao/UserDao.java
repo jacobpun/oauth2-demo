@@ -14,8 +14,8 @@ public class UserDao {
 	private Map<String, UserDetails> userDetailsMap = new HashMap<>();
 	
 	 {
-		UserDetails pk = new User("pk", "pkpassword", "ROLE_PARENT", "ROLE_ADMIN");
-		UserDetails dony = new User("dony", "donypassword", "ROLE_PARENT", "ROLE_ADMIN");
+		UserDetails pk = new User("pk", "pkpassword", "ROLE_USER", "ROLE_ADMIN");
+		UserDetails dony = new User("dony", "donypassword", "ROLE_USER", "ROLE_ADMIN");
 		UserDetails nitya = new User("nitya", "nityapassword", "ROLE_CHILD");
 		UserDetails shena = new User("sneha", "snehapassword", "ROLE_CHILD");	
 		
@@ -27,6 +27,8 @@ public class UserDao {
 	
 	public UserDetails findByName(String name) {
 		UserDetails user =  userDetailsMap.get(name);
+		
+		System.out.println("FOUND: " + user);
 		return user;
 	}
 }
